@@ -11,12 +11,13 @@ private:
     Vector2f m_Position;
     RectangleShape m_BatShape;
 
-    float m_BatSpeed = .3f;
+    float m_BatSpeed = 5.0f;
 
 public:
     Bat(float startX, float startY);
     FloatRect getPosition();
     RectangleShape getShape();
+    void reset(float x, float y);
     void moveLeft();
     void moveRight();
     void update();

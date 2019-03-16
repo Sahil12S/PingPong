@@ -19,6 +19,11 @@ RectangleShape Ball::getShape()
     return m_BallShape;
 }
 
+void Ball::reset(float x, float y)
+{
+    Ball(x, y);
+}
+
 float Ball::getXVelocity()
 {
     return m_XVelocity;
@@ -31,7 +36,7 @@ void Ball::reboundSides()
 
 void Ball::reboundBarOrTop()
 {
-    m_Position.y -= (m_YVelocity * 30);
+    m_Position.y -= (m_YVelocity);
     m_YVelocity = -m_YVelocity;
 }
 

@@ -11,13 +11,15 @@ private:
     Vector2f m_Position;
     RectangleShape m_BallShape;
 
-    float m_XVelocity = .2f;
-    float m_YVelocity = .2f;
+    float m_XVelocity = 4.0f;
+    float m_YVelocity = 4.0f;
 
 public:
     Ball(float startX, float startY);
     FloatRect getPosition();
     RectangleShape getShape();
+
+    void reset(float x, float y);
 
     float getXVelocity();
     void reboundSides();
