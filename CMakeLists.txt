@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_COMPILER  /usr/bin/g++)
 set(CMAKE_C_COMPILER /usr/bin/gcc)
 
-set(SOURCE_FILES main.cpp Bat.h Bat.cpp Ball.h Ball.cpp)
+set(SOURCE_FILES main.cpp Bat.h Bat.cpp Ball.h Ball.cpp Engine.h Engine.cpp Draw.cpp Input.cpp Update.cpp HUD.cpp HUD.h)
 
 add_executable(PingPong ${SOURCE_FILES})
 
